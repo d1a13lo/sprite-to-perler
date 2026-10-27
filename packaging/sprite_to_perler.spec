@@ -1,6 +1,6 @@
 # PyInstaller build for the portable Windows program.
 #   .venv\Scripts\pyinstaller.exe --noconfirm --distpath dist --workpath build packaging\sprite_to_perler.spec
-# Output: dist\Sprite to Perler\Sprite to Perler.exe (keep the whole folder together).
+# Output: dist\Sprite-to-Bead Pattern\Sprite-to-Bead Pattern.exe (keep the whole folder together).
 from pathlib import Path
 
 ROOT = Path(SPECPATH).parent
@@ -22,8 +22,8 @@ a = Analysis(
     noarchive=False,
 )
 pyz = PYZ(a.pure)
-exe = EXE(pyz, a.scripts, [], exclude_binaries=True, name="Sprite to Perler",
+exe = EXE(pyz, a.scripts, [], exclude_binaries=True, name="Sprite-to-Bead Pattern",
           console=False,  # a normal windowed program, no command prompt
           icon=str(ICON),  # shown by File Explorer, shortcuts and the taskbar
           upx=False)
-coll = COLLECT(exe, a.binaries, a.datas, name="Sprite to Perler", upx=False)
+coll = COLLECT(exe, a.binaries, a.datas, name="Sprite-to-Bead Pattern", upx=False)

@@ -327,7 +327,7 @@ def signed(value, unit):
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("Sprite to Perler")
+        self.setWindowTitle("Sprite-to-Bead Pattern")
         screen = QApplication.primaryScreen().availableGeometry()
         self.resize(min(1150, screen.width()), min(880, screen.height() - 40))
         self.setAcceptDrops(True)

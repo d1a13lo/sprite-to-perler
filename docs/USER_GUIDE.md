@@ -1,8 +1,8 @@
-# Sprite to Perler — User Guide
+# Sprite-to-Bead Pattern — User Guide
 
 ![Before and after: Pip the mushroom becomes a Perler bead pattern](promo/before-after-pip-mushroom.png)
 
-**Sprite to Perler** turns a pixel-art picture (a *sprite*) into a finished Perler bead pattern for
+**Sprite-to-Bead Pattern** turns a pixel-art picture (a *sprite*) into a finished Perler bead pattern for
 Windows. Each pixel of your sprite becomes one bead. The app shows you the pattern immediately,
 counts every bead, suggests Perler bead colors to buy, and saves pegboard-by-pegboard charts.
 
@@ -49,14 +49,14 @@ This guide explains every feature, step by step. You do not need any technical k
 
 ## 2. Opening the app
 
-Sprite to Perler is a **portable** program: there is nothing to install.
+Sprite-to-Bead Pattern is a **portable** program: there is nothing to install.
 
-1. Open the **Sprite to Perler** folder.
-2. Double-click **Sprite to Perler.exe** (it shows the fox-and-pegboard icon).
+1. Open the **Sprite-to-Bead Pattern** folder.
+2. Double-click **Sprite-to-Bead Pattern.exe** (it shows the fox-and-pegboard icon).
 
-> **Important:** keep the whole **Sprite to Perler** folder together. The `.exe` file needs the
+> **Important:** keep the whole **Sprite-to-Bead Pattern** folder together. The `.exe` file needs the
 > `_internal` folder next to it. If you want to move the program, move or copy the entire folder.
-> To start it from your desktop, right-click **Sprite to Perler.exe** → **Show more options** →
+> To start it from your desktop, right-click **Sprite-to-Bead Pattern.exe** → **Show more options** →
 > **Send to** → **Desktop (create shortcut)**.
 
 The first start can take a few seconds while Windows checks the new files; later starts are
@@ -65,8 +65,8 @@ PC" message the first time. Choose **More info** → **Run anyway** only if you 
 source you trust.
 
 If the folder is incomplete, the app tells you so instead of starting:
-"**Sprite to Perler cannot start** … The program folder is incomplete or damaged. Copy the whole
-'Sprite to Perler' folder again and keep all of its files together."
+"**Sprite-to-Bead Pattern cannot start** … The program folder is incomplete or damaged. Copy the whole
+'Sprite-to-Bead Pattern' folder again and keep all of its files together."
 
 ---
 
@@ -106,7 +106,7 @@ original size: every pixel becomes one bead.
 **Drag and drop**
 
 1. Open the folder that contains your sprite in File Explorer.
-2. Drag **one** sprite file onto the Sprite to Perler window and let go.
+2. Drag **one** sprite file onto the Sprite-to-Bead Pattern window and let go.
 
 **Upload Image**
 
@@ -115,7 +115,7 @@ original size: every pixel becomes one bead.
 
 **Open from the program icon**
 
-- You can also drop a sprite file directly onto the **Sprite to Perler.exe** icon (or its
+- You can also drop a sprite file directly onto the **Sprite-to-Bead Pattern.exe** icon (or its
   shortcut). The app opens with that sprite already loaded.
 
 The pattern appears automatically — there is no "convert" button. Loading a new sprite replaces
@@ -138,7 +138,7 @@ explains that the 24 × 24 pixel image has an empty outer edge, so its visible s
 ### Getting single sprites from a sprite sheet
 
 Many sprites come on a **sprite sheet**: one big image holding many poses or characters.
-Sprite to Perler converts **one sprite at a time** and does not cut sheets apart itself, so use an
+Sprite-to-Bead Pattern converts **one sprite at a time** and does not cut sheets apart itself, so use an
 outside tool first:
 
 1. Open the sprite sheet in a **sprite ripper** (also called a sprite-sheet unpacker or slicer), or
@@ -147,7 +147,7 @@ outside tool first:
    shrink it, or every pixel will no longer be one bead.
 3. Save it as a **PNG**, ideally with a transparent background. (A single solid background color
    also works — see section 5.)
-4. Load that one PNG into Sprite to Perler (drag and drop, or **Upload Image**).
+4. Load that one PNG into Sprite-to-Bead Pattern (drag and drop, or **Upload Image**).
 5. Repeat for each sprite you want to make.
 
 This works for sprites from any source — sprite sheets, pixel-art drawings you made yourself, or
@@ -612,6 +612,8 @@ correctly. Exports are written to a temporary name first and only appear when co
 
 ---
 
-*Sprite to Perler user guide. Example artwork in this guide ("Pip", "Glob", "Twinkle" and
+*Sprite-to-Bead Pattern user guide. Copyright © 2026 d1a13lo; licensed under the GNU General
+Public License version 3 only (GPL-3.0-only). Created by d1a13lo with development assistance from
+ChatGPT and Claude Code. Example artwork in this guide ("Pip", "Glob", "Twinkle" and
 "Dusk Valley") was created for this documentation. Perler is a brand of its owner; this program is
 not affiliated with or endorsed by it.*

@@ -1,12 +1,12 @@
 ﻿# Capture every documented state of the real packaged program.
 #   powershell -ExecutionPolicy Bypass -File docs\tools\capture_screens.ps1
 # Raw screenshots + control positions go to build\docs_raw (not committed); exports used in the
-# guide are written to C:\SpriteToPerlerDocs (a neutral path, removed by the build script).
-param([string]$Exe = "", [string]$Raw = "", [string]$Exports = "C:\SpriteToPerlerDocs")
+# guide are written to C:\SpriteToBeadPatternDocs (a neutral path, removed by the build script).
+param([string]$Exe = "", [string]$Raw = "", [string]$Exports = "C:\SpriteToBeadPatternDocs")
 $ErrorActionPreference = "Stop"
 $Root = Resolve-Path "$PSScriptRoot\..\.."
 . "$PSScriptRoot\uia.ps1"
-if (-not $Exe) { $Exe = "$Root\dist\Sprite to Perler\Sprite to Perler.exe" }
+if (-not $Exe) { $Exe = "$Root\dist\Sprite-to-Bead Pattern\Sprite-to-Bead Pattern.exe" }
 if (-not $Raw) { $Raw = "$Root\build\docs_raw" }
 $Ex = $Exports  # examples are opened from the neutral folder, so dialogs default to it
 New-Item -ItemType Directory -Force $Raw | Out-Null
@@ -18,7 +18,7 @@ $W, $H = 1600, 1000
 function Start-App($sprite) {
   $argLine = if ($sprite) { "`"$sprite`"" } else { $null }
   $p = if ($argLine) { Start-Process -FilePath $Exe -ArgumentList $argLine -PassThru } else { Start-Process -FilePath $Exe -PassThru }
-  $h = Wait-Window $p.Id "Sprite to Perler"
+  $h = Wait-Window $p.Id "Sprite-to-Bead Pattern"
   Move-Behind $h $W $H
   Start-Sleep -Milliseconds 1500
   return @($p, $h)
@@ -85,7 +85,7 @@ $p = Start-Process -FilePath $Exe -ArgumentList "`"$Ex\glob_slime_white_backgrou
 $d = Wait-Window $p.Id "Background color"
 Save-Shot $d $Raw "17_background_question"
 Invoke-Control $d "Remove outside only"
-$h = Wait-Window $p.Id "Sprite to Perler"; Move-Behind $h $W $H; Start-Sleep -Seconds 1
+$h = Wait-Window $p.Id "Sprite-to-Bead Pattern"; Move-Behind $h $W $H; Start-Sleep -Seconds 1
 Save-Shot $h $Raw "18_background_outside"
 Stop-App $p
 $p = Start-Process -FilePath $Exe -ArgumentList "`"$Ex\not_an_image.png`"" -PassThru
@@ -100,7 +100,7 @@ $p = Start-Process -FilePath $Exe -ArgumentList "`"$Ex\dusk_valley_large.png`"" 
 $d = Wait-Window $p.Id "Background color"
 Save-Shot $d $Raw "20_keep_every_pixel"
 Invoke-Control $d "Keep every pixel"
-$h = Wait-Window $p.Id "Sprite to Perler"; Move-Behind $h $W $H
+$h = Wait-Window $p.Id "Sprite-to-Bead Pattern"; Move-Behind $h $W $H
 Start-Sleep -Seconds 6
 Save-Shot $h $Raw "21_large_loaded"
 Press $h "100%"

@@ -1,4 +1,4 @@
-"""Build docs/Sprite-to-Perler-User-Guide.pdf from docs/USER_GUIDE.md (the single source).
+"""Build docs/Sprite-to-Bead-Pattern-User-Guide.pdf from docs/USER_GUIDE.md (the single source).
 
 Uses Qt's own Markdown reader and PDF writer (already part of the app's
 dependencies). Each main section starts on a new page; images are scaled to
@@ -15,7 +15,7 @@ from PySide6.QtGui import (QFont, QGuiApplication, QImage, QPageLayout, QPageSiz
 
 DOCS = Path(__file__).resolve().parents[1]
 SOURCE = DOCS / "USER_GUIDE.md"
-OUTPUT = DOCS / "Sprite-to-Perler-User-Guide.pdf"
+OUTPUT = DOCS / "Sprite-to-Bead-Pattern-User-Guide.pdf"
 DPI = 96
 MARGIN_MM = 16
 
@@ -55,8 +55,8 @@ def main():
     writer.setPageLayout(QPageLayout(QPageSize(QPageSize.PageSizeId.A4), QPageLayout.Orientation.Portrait,
                                      QMarginsF(MARGIN_MM, MARGIN_MM, MARGIN_MM, MARGIN_MM + 4),
                                      QPageLayout.Unit.Millimeter))
-    writer.setTitle("Sprite to Perler — User Guide")
-    writer.setCreator("Sprite to Perler documentation")
+    writer.setTitle("Sprite-to-Bead Pattern — User Guide")
+    writer.setCreator("Sprite-to-Bead Pattern documentation")
     page = writer.pageLayout().paintRectPixels(DPI)
     width, height = page.width(), page.height()
 
@@ -123,7 +123,7 @@ def main():
         painter.setFont(footer_font)
         painter.setPen(Qt.GlobalColor.gray)
         painter.drawText(QRectF(0, height + 4, width, 20), Qt.AlignmentFlag.AlignRight,
-                         f"Sprite to Perler — User Guide · page {n + 1} of {pages}")
+                         f"Sprite-to-Bead Pattern — User Guide · page {n + 1} of {pages}")
     painter.end()
     print(f"{OUTPUT.name}: {pages} pages, {images} images, {OUTPUT.stat().st_size / 1e6:.1f} MB")
 

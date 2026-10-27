@@ -16,7 +16,7 @@ ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT))
 from perler_engine import auto_layout, crop_to_beads, load_sprite, prepare_sprite, render  # noqa: E402
 
-EXPORTS = Path("C:/SpriteToPerlerDocs")
+EXPORTS = Path("C:/SpriteToBeadPatternDocs")
 EXAMPLES = ROOT / "docs" / "examples"
 PROMO = ROOT / "docs" / "promo"
 IMAGES = ROOT / "docs" / "images"
@@ -70,7 +70,7 @@ def promo(name, sprite_path, pattern, caption, detail=None):
     d = ImageDraw.Draw(canvas)
     icon = Image.open(ROOT / "perler_app" / "assets" / "Sprite_to_Perler_pegboard_icon.png").convert("RGBA")
     canvas.paste(icon.resize((72, 72), Image.Resampling.LANCZOS), (60, 40), icon.resize((72, 72), Image.Resampling.LANCZOS))
-    d.text((150, 44), "Sprite to Perler", fill=TEXT, font=font(BOLD, 44))
+    d.text((150, 44), "Sprite-to-Bead Pattern", fill=TEXT, font=font(BOLD, 44))
     d.text((152, 98), caption, fill=SECONDARY, font=font(REGULAR, 24))
     box = (800, 760)
     before, scale = enlarge(sprite, (box[0] - 56, box[1] - 130))
@@ -135,7 +135,7 @@ def promo_large(grid, pattern):
     icon = Image.open(ROOT / "perler_app" / "assets" / "Sprite_to_Perler_pegboard_icon.png").convert("RGBA")
     small = icon.resize((72, 72), Image.Resampling.LANCZOS)
     canvas.paste(small, (60, 40), small)
-    d.text((150, 44), "Sprite to Perler", fill=TEXT, font=font(BOLD, 44))
+    d.text((150, 44), "Sprite-to-Bead Pattern", fill=TEXT, font=font(BOLD, 44))
     d.text((152, 98), "Large sprites, split across many pegboards", fill=SECONDARY, font=font(REGULAR, 24))
     layout = auto_layout(grid)
     before, scale = enlarge(sprite, (744, 630))

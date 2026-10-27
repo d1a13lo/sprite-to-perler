@@ -1,1 +1,1 @@
-"""Windows desktop interface for the Sprite-to-Perler conversion engine."""
+"""Windows desktop interface for the Sprite-to-Bead Pattern conversion engine."""

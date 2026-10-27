@@ -1,4 +1,4 @@
-# Helpers to drive the real Sprite to Perler.exe through Windows UI Automation (no mouse or
+# Helpers to drive the real Sprite-to-Bead Pattern.exe through Windows UI Automation (no mouse or
 # keyboard use) and capture its window without activating it. Dot-source this file.
 Add-Type -AssemblyName UIAutomationClient, UIAutomationTypes, System.Drawing
 Add-Type @"

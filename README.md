@@ -1,15 +1,15 @@
-# Sprite to Perler
+# Sprite-to-Bead Pattern
 
 **Turn pixel-art sprites into ready-to-build Perler bead patterns on Windows.**
 
+Free to download and use. Created by d1a13lo with development assistance from ChatGPT and Claude Code.
+
 ![Before and after: a 40 × 40 sprite becomes a 2 × 2 pegboard bead pattern](docs/promo/before-after-pip-mushroom.png)
 
-Sprite to Perler converts a PNG or GIF sprite into a finished bead pattern. Every pixel of the
+Sprite-to-Bead Pattern converts a PNG or GIF sprite into a finished bead pattern. Every pixel of the
 sprite becomes one bead in its original color, laid out on standard 29 × 29 pegboards. The app
 counts every bead, suggests Perler colors to buy, and exports numbered charts for each pegboard.
 It works completely offline — no account, no internet connection.
-
-> **Status:** pre-release. No download is published yet.
 
 ## Features
 
@@ -35,16 +35,17 @@ It works completely offline — no account, no internet connection.
 
 ## Download and run (Windows 11, 64-bit; Windows 10 not yet tested)
 
-When a release is published, it will be a ZIP file containing a portable program — nothing to
-install:
+Download the ZIP file from the project's
+[GitHub Releases page](https://github.com/d1a13lo/sprite-to-perler/releases). It contains a
+portable program — nothing to install:
 
 1. Download the ZIP and extract it.
-2. Open the **Sprite to Perler** folder and double-click **Sprite to Perler.exe**.
+2. Open the **Sprite-to-Bead Pattern** folder and double-click **Sprite-to-Bead Pattern.exe**.
 3. Keep the whole folder together: the program needs its `_internal` folder.
 
 The program is not digitally signed, so Windows SmartScreen may show "Windows protected your PC"
 the first time. Choose **More info → Run anyway** only if you downloaded it from the official
-project page.
+GitHub Releases page.
 
 ## Supported input
 
@@ -55,7 +56,7 @@ project page.
 ## User guide
 
 - [Illustrated user guide](docs/USER_GUIDE.md) (also as a printable PDF:
-  `docs/Sprite-to-Perler-User-Guide.pdf`)
+  `docs/Sprite-to-Bead-Pattern-User-Guide.pdf`)
 - [Documentation folder](docs/README.md)
 
 ## Limitations
@@ -92,35 +93,53 @@ Build the portable program:
 .venv\Scripts\pyinstaller.exe --noconfirm --distpath dist --workpath build packaging\sprite_to_perler.spec
 ```
 
-The program is written to `dist\Sprite to Perler\`. A release ZIP should contain that folder
-plus `LICENSE`, `THIRD_PARTY_NOTICES/` and the user-guide PDF.
+The program is written to `dist\Sprite-to-Bead Pattern\`. A release ZIP contains that folder
+plus `README.txt` (from `packaging/README-Windows.txt`), `LICENSE`, `THIRD_PARTY_NOTICES/` and
+the user-guide PDF.
 
 Project layout:
 
 - `perler_engine/` — the conversion engine (no user interface): sprite loading, bead grid,
   pegboard layout, rendering, color matching, charts and reports.
 - `perler_app/` — the PySide6 Windows interface.
-- `packaging/` — the PyInstaller build files.
+- `packaging/` — the PyInstaller build files and the Windows download's `README.txt`.
+- `artwork/` — the original Photoshop bead template (editable source of the bead-ring look).
+- `tools/` — rebuilds the bead-ring tile from the Photoshop template (`tools/build_assets.py`).
 - `tests/` — automated tests, using the example sprites in `docs/examples` and synthetic images.
 - `docs/` — the user guide, screenshots, examples and documentation scripts.
 
 ## License
 
-Sprite to Perler is free software, licensed under the **GNU General Public License version 3** —
-see [`LICENSE`](LICENSE). It includes third-party components under their own licenses; see
-[`THIRD_PARTY_NOTICES/`](THIRD_PARTY_NOTICES/README.md).
+Copyright © 2026 d1a13lo.
+
+Sprite-to-Bead Pattern is free software: you can redistribute it and/or modify it under the terms
+of the **GNU General Public License version 3 only** (GPL-3.0-only) as published by the Free
+Software Foundation — see [`LICENSE`](LICENSE). It is distributed in the hope that it will be
+useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.
+
+This covers the project's own code, documentation and artwork, including the original Photoshop
+bead template in [`artwork/`](artwork/README.md). It does not claim ownership of third-party
+components or data, which keep their own licenses (see
+[`THIRD_PARTY_NOTICES/`](THIRD_PARTY_NOTICES/README.md)), and it claims no more rights in
+AI-generated material than applicable law provides (see
+[`PROJECT-ASSETS.md`](THIRD_PARTY_NOTICES/PROJECT-ASSETS.md)).
 
 ## Acknowledgments
 
-- The bead-ring look comes from an original Photoshop bead template created by the project author.
-- The application icon was created by the project author with ChatGPT.
+- Created by d1a13lo with development assistance from ChatGPT and Claude Code.
+- The bead-ring look comes from an original Photoshop bead template created by d1a13lo, included
+  in [`artwork/`](artwork/README.md).
+- The application icon was created by d1a13lo with ChatGPT.
 - 95 Perler digital color values come from the [BeadColors](https://github.com/maxcleme/beadcolors)
-  project (MIT License); 23 are estimates recorded from meltbead.com. See
+  project (MIT License); 23 are estimates recorded from meltbead.com, used with Meltbead's
+  permission as reported by the project owner. See
   [palette provenance](THIRD_PARTY_NOTICES/PALETTE-PROVENANCE.md).
 - Built with [Python](https://www.python.org), [Qt for Python (PySide6)](https://www.qt.io/qt-for-python),
   [Pillow](https://python-pillow.org) and [NumPy](https://numpy.org).
 
 ## Trademark notice
 
-Perler is a trademark of its owner. Sprite to Perler is an independent project and is not
-affiliated with, sponsored by, or endorsed by the owner of the Perler brand.
+Perler is a trademark of its owner. Sprite-to-Bead Pattern is an independent project and is not
+affiliated with, sponsored by, or endorsed by the owner of the Perler brand. Perler color names
+and product codes are used only to identify products.

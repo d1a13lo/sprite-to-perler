@@ -16,7 +16,7 @@ from .window import MainWindow
 def show_unexpected_error(exc_type, exc, tb):
     """A windowed program has no console, so unexpected errors are shown, never lost."""
     details = "".join(traceback.format_exception(exc_type, exc, tb, limit=4))
-    QMessageBox.critical(None, "Sprite to Perler — unexpected error",
+    QMessageBox.critical(None, "Sprite-to-Bead Pattern — unexpected error",
                          "Something went wrong. Your files were not changed.\n\n" + details)
 
 
@@ -43,9 +43,9 @@ def main():
     try:
         ring_tile()  # the Photoshop-derived bead-ring asset must be present and unchanged
     except AssetError as exc:
-        QMessageBox.critical(None, "Sprite to Perler cannot start",
+        QMessageBox.critical(None, "Sprite-to-Bead Pattern cannot start",
                              f"{exc}\n\nThe program folder is incomplete or damaged. Copy the whole "
-                             "'Sprite to Perler' folder again and keep all of its files together.")
+                             "'Sprite-to-Bead Pattern' folder again and keep all of its files together.")
         return 1
     window = MainWindow()
     window.show()

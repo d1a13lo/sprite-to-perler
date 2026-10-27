@@ -1,7 +1,9 @@
 # Third-party notices
 
-Sprite to Perler is licensed under the GNU General Public License version 3 (see
-[`../LICENSE`](../LICENSE)). The Windows download also contains the third-party software listed
+Sprite-to-Bead Pattern is Copyright © 2026 d1a13lo and licensed under the GNU General Public
+License version 3 only (GPL-3.0-only; see [`../LICENSE`](../LICENSE)). That copyright covers the
+project's own material only; the third-party software and data below keep their own copyrights
+and licenses. The Windows download also contains the third-party software listed
 below. Their license texts are in this folder, copied unchanged from the installed packages or from
 the official sources named in each file.
 
@@ -27,7 +29,7 @@ the official sources named in each file.
 > Portions of this software are copyright © 2026 The FreeType Project (https://freetype.org).
 > All rights reserved.
 >
-> Sprite to Perler is based in part on the work of the FreeType Team.
+> Sprite-to-Bead Pattern is based in part on the work of the FreeType Team.
 
 *The FreeType License asks for "the value from the FreeType version you actually use"; Qt's
 attribution for FreeType 2.14.3 gives "Copyright (c) 1996-2026"
@@ -51,7 +53,7 @@ packaged and has not been legally reviewed.
 | 95 Perler digital color values | BeadColors dataset (https://github.com/maxcleme/beadcolors) | MIT License, "Copyright (c) 2020 maxcleme" — see [`BeadColors-ATTRIBUTION.md`](BeadColors-ATTRIBUTION.md) and [`BeadColors-LICENSE.txt`](BeadColors-LICENSE.txt) |
 | 23 Perler digital color values (2026 colors) | meltbead.com Perler chart, which states they "were sampled from Perler product photos" | Permission from Meltbead **reported by the project owner**, not independently verified; scope not recorded — see [`PALETTE-PROVENANCE.md`](PALETTE-PROVENANCE.md) |
 | Perler color names and product codes | perler.com product listing | Factual product information; Perler is a trademark of its owner |
-| Bead-ring overlay, application icon, example sprites, documentation | Sprite to Perler project | See [`PROJECT-ASSETS.md`](PROJECT-ASSETS.md) |
+| Photoshop bead template, bead-ring overlay, application icon, example sprites, documentation | Sprite-to-Bead Pattern project (d1a13lo) | See [`PROJECT-ASSETS.md`](PROJECT-ASSETS.md) |
 
 ## Still unresolved
 
