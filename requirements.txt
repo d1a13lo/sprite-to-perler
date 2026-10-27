@@ -1,0 +1,5 @@
+pillow==13.0.0
+numpy==2.5.4
+PySide6-Essentials==6.12.0
+pytest==9.1.1
+pyinstaller==6.22.3  # build only (packaging/sprite_to_perler.spec)

@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+build/
+dist/
+test_output/
+
+# Local launcher shortcut (contains personal absolute paths; created per machine)
+Sprite to Perler.lnk
+# User's original icon pack (the approved files are kept in perler_app/assets)
+/Sprite_to_Perler_pegboard_icon.ico
+/Sprite_to_Perler_pegboard_icon.png
+/Sprite_to_Perler_pegboard_icon_pack/
+/Sprite_to_Perler_pegboard_icon_pack.zip

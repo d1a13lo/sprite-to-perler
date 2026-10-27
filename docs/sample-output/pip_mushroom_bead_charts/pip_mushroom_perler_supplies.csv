@@ -1,0 +1,12 @@
+﻿Perler color,Product code,Digital hex,Beads,Original colors,Largest match Delta E (CIEDE2000),Color data source,Data confidence,Notes
+Tomato,80-15211,#D14337,254,#D8353A,3.3,"beadcolors (maxcleme/beadcolors, MIT)",community-measured,
+Creme,80-19002,#E1E2BB,156,#F3E3C3,7.7,"beadcolors (maxcleme/beadcolors, MIT)",community-measured,
+Black,80-19018,#323234,124,#18141C,10.4,"beadcolors (maxcleme/beadcolors, MIT)",community-measured,
+Red,80-19005,#B0353C,109,#AA222E,3.7,"beadcolors (maxcleme/beadcolors, MIT)",community-measured,
+Toasted Marshmallow,80-15208,#DEDACE,105,#FAF4E8,5.8,"beadcolors (maxcleme/beadcolors, MIT)",community-measured,
+Salmon,80-15204,#E1747A,64,#F2706B,5.4,"beadcolors (maxcleme/beadcolors, MIT)",community-measured,
+Champagne,PER17658,#E5C192,58,#D9C29A,4.1,meltbead.com (sampled from Perler product photos),"low - photo estimate, single source",
+Coral,80-15272,#FF9A8B,8,#F0A096,3.8,"beadcolors (maxcleme/beadcolors, MIT)",community-measured,
+Fruit Punch,80-15256,#CA3B65,6,#BE505A,6.8,"beadcolors (maxcleme/beadcolors, MIT)",community-measured,
+White,80-19001,#EAEFEE,2,#FFFFFF,4.4,"beadcolors (maxcleme/beadcolors, MIT)",community-measured,
+TOTAL,,,886,,,,,Digital approximations only; physical bead colors vary.
